@@ -1,0 +1,12 @@
+﻿.container {
+  max-width: 1000px;
+}
+
+.grid {
+  display: grid;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
