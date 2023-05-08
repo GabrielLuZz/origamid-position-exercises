@@ -11,7 +11,7 @@
     <header>
       <img class="logo" src="/assets/img/bikcraft.svg" alt="" />
 
-      <nav>
+      <nav aria-label="primária">
         <ul class="menu">
           <li class="menu__item"><a href="#">sobre</a></li>
           <li class="menu__item"><a href="#">produtos</a></li>
@@ -21,11 +21,10 @@
       </nav>
     </header>
 
-    <main>
-      <section class="container grid information">
+    <main class="container">
+      <article class="grid information" aria-labelledby="label-introduction">
         <div class="introduction grid">
-          <span class="detail"></span>
-          <h1>Bicicletas Feitas a Mão</h1>
+          <h1 id="label-introduction">Bicicletas Feitas a Mão</h1>
           <p>
             A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela
             vem equipada com os melhores acessórios da marca.
@@ -34,30 +33,32 @@
         </div>
 
         <img src="/assets/img/bicicleta.jpg" alt="bicileta nimbus stark" />
+      </article>
 
-        <h2 class="subtitle">vantagens bikcraft</h2>
+      <article class="grid information" aria-labelledby="label-advantages">
+        <h2 id="label-advantages" class="subtitle">vantagens bikcraft</h2>
 
-        <div class="advantages">
-          <div class="advantage grid">
+        <ul class="advantages">
+          <li class="advantage grid">
             <img
               src="/assets/img/eletrica.svg"
               alt="icone de bicicleta elétrica"
             />
             <h3>Motor Elétrico</h3>
             <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-          </div>
-          <div class="advantage grid">
+          </li>
+          <li class="advantage grid">
             <img src="/assets/img/velocidade.svg" alt="icone de velocidade" />
             <h3>40 km/h</h3>
             <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-          </div>
-          <div class="advantage grid">
+          </li>
+          <li class="advantage grid">
             <img src="/assets/img/rastreador.svg" alt="icone de rastreador" />
             <h3>Rastreador</h3>
             <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-          </div>
-        </div>
-      </section>
+          </li>
+        </ul>
+      </article>
     </main>
 
     <footer>
